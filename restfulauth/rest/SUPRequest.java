@@ -1,0 +1,15 @@
+package com.example.restfulauth.rest;
+
+import lombok.Data;
+import org.springframework.stereotype.Component;
+
+@Data
+@Component
+public class SUPRequest {
+
+    private String name;
+    private String email;
+    private String password;
+
+
+}
