@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.sserrvverr;
+
+message AuthenticationRequest{
+    string token = 1;
+}
+
+message AuthenticationResponse{
+    string uuid = 1;
+}
+
+service Authentication {
+    rpc Authenticate(AuthenticationRequest) returns (AuthenticationResponse);
+}
